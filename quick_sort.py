@@ -9,6 +9,7 @@ def partition(nums, left, right):
 	# 现在主元 pivot 等于 nums[right]
 
 	boundary = left
+	# index 最多取到 right-1
 	for index in range(left, right):
 		if nums[index] < pivot:
 			swap(nums, index, boundary)
